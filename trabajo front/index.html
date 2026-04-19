@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DelRey Travels | Planifica tu viaje con estrategia</title>
+    <title>Coningenio | Soluciones digitales</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Geist:wght@300;400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Geist:wght@300;400&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,166 +20,199 @@
     <link rel="stylesheet" href="01-bases.css">
     <link rel="stylesheet" href="002-header.css">
     <link rel="stylesheet" href="003-hero.css">
+    <link rel="stylesheet" href="004-nosotros.css">
+    <link rel="stylesheet" href="servicios.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__nav">
-            <button class="menu__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">MENÚ</button>
+            <button class="menu__toggle" aria-expanded="false" aria-controls="nav-menu"
+                aria-label="Abrir menú">MENÚ</button>
             <nav id="nav-menu" class="menu" aria-label="Navegación principal">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="/">INICIO</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html">INICIO</a></li>
                     <li class="menu__item"><a class="menu__link" href="#servicios">SERVICIOS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#blog">BLOG</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#yo-soy">YO SOY</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#blog">NOSOTROS</a></li>
                     <li class="menu__item"><a class="menu__link" href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
         <div class="header__logo">
-            <a href="/" class="header__brand">DELREY TRAVELS</a>
+            <a href="index.html" class="header__brand">CONINGENIO</a>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <picture class="hero__media">
-                <source srcset="/img/hero-travels-mobile.webp" media="(max-width: 768px)">
-                <img src="/img/hero-travels.webp" alt="Planifica con estrategia y viaja con confianza" class="hero__img"
-                    width="1920" height="1280" loading="eager" fetchpriority="high">
+                <source srcset="img/hero-congenio-mobile.jpg" media="(max-width: 768px)">
+                <img src="img/hero-congenio.webp" alt="Soluciones de software" class="hero__img" width="1920"
+                    height="1280" loading="eager" fetchpriority="high">
             </picture>
 
             <div class="hero__texto">
-                <h1 class="hero__title">Cada gran viaje comienza <br>mucho antes de despegar</h1>
-                <p class="hero__description">Un espacio para viajeros que quieren descubrir el mundo con inteligencia.</p>
+                <h1 class="hero__title">Soluciones digitales con ingenio y resultados</h1>
+                <p class="hero__description">Impulsamos tu negocio con tecnología y creatividad.</p>
             </div>
-            <a class="hero__link hero__link--blog" href="#blog">LEER BLOG</a>
+            <a class="hero__link hero__link--blog" href="#contacto">CONTACTO</a>
             <a class="hero__link hero__link--servicios" href="#servicios">SERVICIOS</a>
         </section>
+        <div class="separador"></div>
 
         <section class="servicios" id="servicios">
-            <h2 class="servicios__title">ORGANIZA TU VIAJE SMART</h2>
+            <h2 class="servicios__title">Nosotros</h2>
 
             <div class="servicios__grid">
 
                 <article class="servicios__card">
-                    <img class="servicios__image" src="/img/Viajes-smart.webp" alt="Asesoría Smart" width="800" height="600" loading="lazy">
+                    <img class="servicios__image" src="img/mision-vision.webp" alt="soluciones-digitales" width="800"
+                        height="600" loading="lazy">
                     <div class="servicios__info">
-                        <h3 class="servicios__card-title">Asesoría Smart</h3>
-                        <p class="servicios__card-text">Ordena tu viaje antes de reservar.</p>
-                        <button type="button" class="btn btn--primario servicios__button" data-servicio="asesoria">
-                            Ver detalle
-                        </button>
+                        <h3 class="servicios__card-title">Misión</h3>
+                        <p id="mision-texto">Cargando...</p>
+
                     </div>
                 </article>
 
                 <article class="servicios__card">
-                    <img class="servicios__image" src="/img/viajes-asesoria.webp" alt="Itinerario Smart" width="800" height="600" loading="lazy">
+                    <img class="servicios__image" src="img/mision-vision.webp" alt="soluciones-digitales" width="800"
+                        height="600" loading="lazy">
                     <div class="servicios__info">
-                        <h3 class="servicios__card-title">Itinerario Smart</h3>
-                        <p class="servicios__card-text">Tu viaje diseñado día a día.</p>
-                        <button type="button" class="btn btn--primario servicios__button" data-servicio="itinerario">
-                            Ver detalle
-                        </button>
+                        <h3 class="servicios__card-title">Visión</h3>
+                        <p id="vision-texto">Cargando...</p>
+
                     </div>
                 </article>
 
             </div>
         </section>
+        <div class="separador"></div>
+
+        <!-- SERVICIOS -->
+
         <section class="blog" id="blog">
-            <h2 class="blog__title">ARTICULOS DE BLOG</h2>
+            <h2 class="blog__title">Servicios</h2>
             <div class="blog__grid">
 
                 <article class="blog__card">
-                    <a href="/blog/planificar-viaje-con-estrategia" class="blog__card-link">
-                        <img class="blog__image" src="/img/articulo-1.webp" alt="Consejos clave para disfrutar sin estrés" width="800"
+                    <a href="" class="blog__card-link">
+                        <img class="blog__image" src="img/servicios.webp" alt="Consultoría Digital" width="800"
                             height="600" loading="lazy">
                         <div class="blog__info">
-                            <h3 class="blog__card-title">Consejos clave para disfrutar sin estrés</h3>
-                            <p class="blog__card-text">5 tips clave para tu primer viaje al extranjero</p>
+                            <h3 class="blog__card-title">Consultoría Digital</h3>
+                            <p class="blog__api-texto" style="display:none;"></p>
+                            <button class="btn btn--primario blog__vermas">Ver más</button>
                         </div>
                     </a>
                 </article>
 
                 <article class="blog__card">
-                    <a href="/blog/articulo-2" class="blog__card-link">
-                        <img class="blog__image" src="/img/articulo-2.webp" alt="Título artículo 2" width="800" height="600" loading="lazy">
+                    <a href="" class="blog__card-link">
+                        <img class="blog__image" src="img/servicios.webp" alt="Soluciones Multiexperiencia" width="800"
+                            height="600" loading="lazy">
                         <div class="blog__info">
-                            <h3 class="blog__card-title">Título artículo 2</h3>
-                            <p class="blog__card-text">Breve descripción del artículo 2</p>
+                            <h3 class="blog__card-title">Soluciones Multiexperiencia</h3>
+                            <p class="blog__api-texto" style="display:none;"></p>
+                            <button class="btn btn--primario blog__vermas">Ver más</button>
                         </div>
                     </a>
                 </article>
 
                 <article class="blog__card">
-                    <a href="/blog/articulo-3" class="blog__card-link">
-                        <img class="blog__image" src="/img/articulo-3.webp" alt="Título artículo 3" width="800" height="600" loading="lazy">
+                    <a href="" class="blog__card-link">
+                        <img class="blog__image" src="img/servicios.webp" alt="Evolución de Ecosistemas" width="800"
+                            height="600" loading="lazy">
                         <div class="blog__info">
-                            <h3 class="blog__card-title">Título artículo 3</h3>
-                            <p class="blog__card-text">Breve descripción del artículo 3</p>
+                            <h3 class="blog__card-title">Evolución de Ecosistemas</h3>
+                            <p class="blog__api-texto" style="display:none;"></p>
+                            <button class="btn btn--primario blog__vermas">Ver más</button>
                         </div>
                     </a>
                 </article>
+
+                <article class="blog__card">
+                    <a href="" class="blog__card-link">
+                        <img class="blog__image" src="img/servicios.webp" alt="Soluciones Low-Code" width="800"
+                            height="600" loading="lazy">
+                        <div class="blog__info">
+                            <h3 class="blog__card-title">Soluciones Low-Code</h3>
+                            <p class="blog__api-texto" style="display:none;"></p>
+                            <button class="btn btn--primario blog__vermas">Ver más</button>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Script principal -->
+                <script src="script.js"></script>
 
             </div>
         </section>
+        <div class="separador"></div>
 
-        <section class="yo-soy" id="yo-soy">
-            <img class="yo-soy__image" src="/img/fondo-yosoy.webp" alt="Fondo Yo Soy" width="1920" height="1080" loading="lazy">
-            <h2 class="yo-soy__title">YO SOY DEL REY TRAVELS</h2>
-            <p class="yo-soy__text">Soy Cristopher, aunque muchos me conocen como DelRey Travels. Viajar es mi pasión y también mi forma de
-                ayudar: comparo, pruebo y optimizo rutas para que tú puedas viajar mejor, gastando menos y disfrutando
-                más
-                Creé DelRey Travels para compartir mis aprendizajes: rutas inteligentes, buenos hoteles, consejos reales
-                y formas de disfrutar más sin gastar de más. Viajar es una pasión, pero también es estrategia.
-                Mi misión es inspirarte a explorar el mundo y ayudarte a que tu próxima aventura sea épica, accesible y
-                pensada a tu medida.</p>
-
-            <nav class="yo-soy__redes" aria-label="Redes sociales">
-                <a class="yo-soy__social-link" href="https://www.instagram.com/delrey.travels" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <i class="yo-soy__social-icon fa-brands fa-instagram"></i>
-                </a>
-                <a class="yo-soy__social-link" href="https://www.tiktok.com/@delreytravels" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                    <i class="yo-soy__social-icon fa-brands fa-tiktok"></i>
-                </a>
-                <a class="yo-soy__social-link" href="https://www.flickr.com/photos/198182539@N03/" target="_blank" rel="noopener noreferrer" aria-label="Flickr">
-                    <i class="yo-soy__social-icon fa-brands fa-flickr"></i>
-                </a>
-                <a class="yo-soy__social-link" href="mailto:contacto@delreytravels.com" aria-label="Correo">
-                    <i class="yo-soy__social-icon fa-solid fa-envelope"></i>
-                </a>
-            </nav>
-
+        <!-- Formulario de contacto con fondo -->
+        <section class="contacto" id="contacto">
+            <div class="contacto__fondo">
+                <img src="img/hero-congenio-mobile.jpg" alt="Fondo contacto" class="contacto__bg-img" loading="lazy">
+                <div class="contacto__form-wrapper">
+                    <h2 class="contacto__title">Contacto</h2>
+                    <form class="contacto__form" id="form-contacto" novalidate>
+                        <div class="contacto__campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50" placeholder="Tu nombre">
+                            <span class="contacto__error" id="error-nombre"></span>
+                        </div>
+                        <div class="contacto__campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            <span class="contacto__error" id="error-email"></span>
+                        </div>
+                        <div class="contacto__campo">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8,15}" placeholder="Ej: 123456789">
+                            <span class="contacto__error" id="error-telefono"></span>
+                        </div>
+                        <div class="contacto__campo">
+                            <label for="servicio">Servicio</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="Consultoría Digital">Consultoría Digital</option>
+                                <option value="Soluciones Multiexperiencia">Soluciones Multiexperiencia</option>
+                                <option value="Evolución de Ecosistemas">Evolución de Ecosistemas</option>
+                                <option value="Soluciones Low-Code">Soluciones Low-Code</option>
+                            </select>
+                            <span class="contacto__error" id="error-servicio"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primario">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </section>
+        <div class="separador"></div>
+
+    
+
     </main>
 
     <footer class="footer">
-        <p class="footer__text">&copy; <span id="fecha"></span> DelRey Travels. Todos los derechos reservados.</p>
-
-        <script>
-            document.getElementById('fecha').textContent = new Date().getFullYear();
-        </script>
+        <div class="footer__info">
+            <p>Av. Providencia 1234, Oficina 601<br>
+            Providencia, Santiago<br>
+            Teléfono: +56 2 1234 5678<br>
+            <a href="https://www.coningenio.cl" target="_blank">www.coningenio.cl</a> | <a href="mailto:info@coningenio.cl">info@coningenio.cl</a></p>
+            <p class="footer__text">&copy; <span id="fecha"></span> DelRey Travels. Todos los derechos reservados.</p>
+        </div>
     </footer>
-<!-- JavaScript para el menú móvil -->
+    <!-- JavaScript para el menú móvil -->
 
-    <script>
-        const toggle = document.querySelector('.menu__toggle');
-        const nav = document.getElementById('nav-menu');
 
-        toggle.addEventListener('click', () => {
-            const abierto = nav.classList.toggle('menu--abierto');
-            toggle.setAttribute('aria-expanded', abierto);
-            toggle.textContent = abierto ? 'X' : 'MENÚ';
-        });
+    <!-- Script principal -->
+    <script src="script.js"></script>
 
-        nav.querySelectorAll('a').forEach(enlace => {
-            enlace.addEventListener('click', () => {
-                nav.classList.remove('menu--abierto');
-                toggle.setAttribute('aria-expanded', false);
-                toggle.textContent = 'MENÚ';
-            });
-        });
-    </script>
+    <!-- CONTACTO -->
+     <section>
+        
+     </section>
 
 </body>
 

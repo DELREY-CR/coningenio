@@ -1,0 +1,204 @@
+.blog__grid .blog__card:nth-child(n+3) {
+    margin-top: 25px;
+}
+.blog__card {
+    position: relative;
+}
+
+.blog__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.blog__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(0,0,0,0.45);
+    border-radius: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.blog__card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 24px 16px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Forzar grid 2x2 en blog manteniendo centrado */
+.blog__grid {
+    grid-template-columns: repeat(2, 1fr) 
+}
+
+@media (max-width: 700px) {
+    .blog__grid {
+        grid-template-columns: 1fr 
+    }
+}
+
+
+/* =========================
+	 IMÁGENES DEL BLOG (ajuste de tamaño)
+========================= */
+ .blog__image {
+  max-width: none;
+  width: 450px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+ }
+
+ .blog__grid {
+  gap: 1px; /* Puedes aumentar o reducir este valor */
+}
+
+/* Contacto con fondo y superposición */
+.contacto {
+  position: relative;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__fondo {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+
+
+.contacto__bg-img {
+  width: 100%;
+  height: 740px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7) blur(1px);
+}
+.contacto__form-wrapper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  z-index: 2;
+}
+.contacto__form {
+  background: rgba(255,255,255,0.95);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 350px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.contacto__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.contacto__form label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.contacto__form input,
+.contacto__form select {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #fff;
+}
+.contacto__form input:focus,
+.contacto__form select:focus {
+  outline: 2px solid #007bff;
+  border-color: #007bff;
+}
+.contacto__error {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  min-height: 1.1em;
+}
+.contacto__title {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .contacto__fondo {
+    max-width: 98vw;
+  }
+  .contacto__bg-img {
+    height: 220px;
+  }
+  .contacto__form-wrapper {
+    padding: 0.5rem;
+  }
+  .contacto__form {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+}
+
+.footer {
+  background: #fff;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.footer__info p {
+  margin: 0.2em 0;
+  font-size: 1rem;
+  color: #444;
+}
+.footer__info a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  word-break: break-all;
+}
+.footer__info a:hover {
+  color: #222;
+  text-decoration: none;
+}
+.footer__text {
+  margin-top: 0.7em;
+  font-size: 0.95rem;
+  color: #888;
+}
