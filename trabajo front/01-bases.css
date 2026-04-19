@@ -1,0 +1,162 @@
+/* =========================
+   VARIABLES DE COLOR Y TIPOGRAFÍA
+========================= */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --acento-color: #000000a3;
+    --acento-color2: #1f6f8b;
+    --acento-color-hover: #000000;
+    --fuente-titulos: 'Cormorant Garamond',serif;
+    --fuente-texto: 'Inter', sans-serif;
+    --fuente-texto2: 'Geist', sans-serif;
+
+    
+}
+
+/* =========================
+  RESET BÁSICO (quita estilos por defecto)
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   ESTILOS BASE (globales)
+========================= */
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  line-height: 1.6; /* Mejora la legibilidad de interlineado */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 40px 0;
+  margin-bottom: 0;
+  scroll-margin-top: 110px; /* detiene el salto de seccion al hacer clic en el menú */
+}
+
+/* =========================
+  TIPOGRAFÍA (jerarquía títulos)
+========================= */
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem); /* mín móvil → escala según pantalla → máx desktop */
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  line-height: 1.3;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+}
+
+/* =========================
+   UTILIDADES / REUTILIZABLES
+========================= */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primario {
+  background-color: var(--acento-color);
+  color: var(--secondary-color);
+}
+
+.btn--primario:hover {
+  background-color: var(--acento-color-hover);
+}
+
+/* =========================
+   ICONOS (FontAwesome)
+========================= */
+.fa-envelope,
+.fa-instagram,
+.fa-flickr,
+.fa-tiktok {
+  color: var(--acento-color);
+  font-size: 30px;
+  transition: 0.25s ease;
+}
+
+.yo-soy__social-link:hover .yo-soy__social-icon {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   GRIDS (contenedores tarjetas responsivos)
+========================= */
+.servicios__grid,
+.blog__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.servicios__card,
+.blog__card {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+

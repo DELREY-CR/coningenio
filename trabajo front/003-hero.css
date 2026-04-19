@@ -1,0 +1,151 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    /* Permite posicionar la imagen dentro del contenedor hero */
+    width: 100%;
+    /* Asegura que el hero ocupe todo el ancho del contenedor */
+    height: 60vh;
+    /* Ajusta la altura del hero para dispositivos móviles */
+    overflow: hidden;
+    /* Evita que la imagen se desborde del contenedor hero */
+}
+
+.hero::after {
+    content: '';
+    /* Crea un pseudo-elemento para el overlay */
+    position: absolute;
+    /* Posiciona el overlay dentro del contenedor hero */
+    inset: 0;
+    /* Asegura que el overlay cubra todo el contenedor hero */
+    background: rgba(0, 0, 0, 0.5);
+    /* Capa de superposición para mejorar la legibilidad del texto */
+    z-index: 1;
+    /* Asegura que el overlay esté por debajo del texto */
+}
+
+.hero__media {
+    position: absolute;
+    /* Posiciona la imagen dentro del contenedor hero */
+    inset: 0;
+    /* Asegura que la imagen ocupe todo el contenedor hero */
+    width: 100%;
+    /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    height: 100%;
+    /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+
+}
+
+.hero__img {
+    width: 100%;
+    /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    height: 100%;
+    /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+    object-position: center;
+    /* Centra la imagen en su contenedor */
+}
+
+
+.hero__texto {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 2vw, 1.2rem);
+}
+
+.hero__title {
+    color: var(--secondary-color);
+}
+
+.hero__description {
+    color: var(--secondary-color);
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    opacity: 0.85;
+}
+
+.hero__link {
+    background-color: var(--acento-color);
+    color: var(--secondary-color);
+    font-family: var(--fuente-texto2);
+    font-weight: 300;
+    font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+    padding: 10px 24px;
+    border-radius: 4px;
+}
+
+.hero__link--blog {
+    position: absolute;
+    /* Posiciona el botón dentro del hero */
+    bottom: calc(15% + 56px);
+    /* Posiciona el botón a 15% del fondo del hero, ajustando por la altura del botón */
+    left: 50%;
+    /* Posiciona el botón en la parte inferior del hero */
+    transform: translateX(-50%);
+    /* Centra horizontalmente el botón */
+    z-index: 2;
+    /* Asegura que el botón esté por encima del overlay */
+}
+
+.hero__link--servicios {
+    position: absolute;
+    bottom: 15%;
+    /* Posiciona el botón a 10% del fondo del hero */
+    left: 50%;
+    /* Posiciona el botón en la parte inferior del hero */
+    transform: translateX(-50%);
+    /* Centra horizontalmente el botón */
+    z-index: 2;
+    /* Asegura que el botón esté por encima del overlay */
+}
+
+.hero__link:hover,
+.hero__link:focus-visible {
+  background-color: var(--acento-color-hover);
+}
+
+
+
+
+
+/* =========================
+   HERO DESKTOP
+========================= */
+@media (min-width: 768px) {
+    .hero {
+        height: 78vh;
+    }
+
+    /* Centrado de botones: partimos del centro (50%) y usamos 50 - d (izquierda) y 50 + d (derecha) */
+
+    .hero__link--blog {
+        bottom: 18%;
+        left: 38%;
+        transform: translateX(-50%);
+    }
+
+    .hero__link--servicios {
+        bottom: 18%;
+        left: 62%; 
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (min-width:1024px) {
+    .hero__texto {
+        width: 60%;
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+
+}
