@@ -175,3 +175,55 @@ section p {
   background: none;
 }
 
+.modo-btn {
+  margin-left: 1.5rem;
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modo-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+body.noche {
+  background: #181818;
+  color: #f2f2f2;
+}
+body.noche .header,
+body.noche .footer,
+body.noche .contacto__form,
+body.noche .blog__card {
+  background: #232323 !important;
+  color: #f2f2f2 !important;
+}
+body.noche .contacto__form input,
+body.noche .contacto__form select {
+  background: #222;
+  color: #f2f2f2;
+  border-color: #444;
+}
+body.noche .contacto__form input:focus,
+body.noche .contacto__form select:focus {
+  outline: 2px solid #fff;
+  border-color: #fff;
+}
+body.noche .footer__info a {
+  color: #fff !important;
+}
+body.noche .modo-btn {
+  background: #232323;
+  color: #fff;
+  border-color: #444;
+}
+

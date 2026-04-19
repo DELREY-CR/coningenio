@@ -113,3 +113,23 @@ if (formContacto) {
     }
   });
 }
+
+// Modo día/noche
+const btnModo = document.getElementById('toggle-modo');
+if (btnModo) {
+  // Cargar preferencia guardada
+  if (localStorage.getItem('modo') === 'noche') {
+    document.body.classList.add('noche');
+    btnModo.textContent = '☀️';
+  }
+  btnModo.addEventListener('click', () => {
+    document.body.classList.toggle('noche');
+    if (document.body.classList.contains('noche')) {
+      btnModo.textContent = '☀️';
+      localStorage.setItem('modo', 'noche');
+    } else {
+      btnModo.textContent = '🌙';
+      localStorage.setItem('modo', 'dia');
+    }
+  });
+}

@@ -110,6 +110,11 @@
   z-index: 2;
 }
 .contacto__form {
+  max-width: 270px;
+  width: 100%;
+  height: auto;
+  padding: 1.2rem;
+  font-size: 0.95rem;
   background: rgba(255,255,255,0.95);
   border-radius: 1rem;
   padding: 2rem;
@@ -131,10 +136,10 @@
 }
 .contacto__form input,
 .contacto__form select {
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.97rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
-  font-size: 1rem;
   background: #fff;
 }
 .contacto__form input:focus,
@@ -163,10 +168,15 @@
   }
   .contacto__form-wrapper {
     padding: 0.5rem;
+    position: static;
   }
   .contacto__form {
     padding: 1rem;
     max-width: 98vw;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    box-sizing: border-box;
   }
 }
 
